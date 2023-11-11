@@ -11,7 +11,7 @@ spec:
             fieldPath: metadata.annotations['devops.cloud.ibm.com/build-number']
   steps:
     - name: simple-step
-      image: ubuntu
+      image: "icr.io/continuous-delivery/pipeline/pipeline-base-image\"
       command: ["/bin/bash", "-c"]
       args:
         - echo -e "Start Pipeline Run - Build Number $BUILD_NUMBER";
